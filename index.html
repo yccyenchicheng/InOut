@@ -1,1 +1,421 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>InOut</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+    <nav class="grey darken-4" role="navigation">
+      <div classi="nav-wrapper  container" >
+        <ul class="left hide-on-med-and-down">
+          <li><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#abstract">Abstract</a></li>
+          <li><a class="page-scroll" href="#paper">Paper</a></li>
+          <li><a class="page-scroll" href="#models">Models</a></li>
+          <li><a class="page-scroll" href="#results">Results</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Diverse Image Outpainting via GAN Inversion</h4>
+      <!-- <h4 class="header center black-text">Disentangled Representation</h4> -->
+
+      <br>
+
+      <div class="row center">
+        <!-- <h5 class="header col m1 s12">
+        </h5> -->
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="https://yccyenchicheng.github.io/" target="blank">Yen-Chi Cheng</a><sup>1</sup></div>
+          <!-- <div class="school"><a href="https://www.cmu.edu/" target="blank">Carnegie Mellon University</a></div> -->
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="https://hubert0527.github.io/" target="blank">Chieh Hubert Lin</a><sup>2</sup></div>
+          <!-- <div class="school"><a href="http://www.ucmerced.edu/" target="blank">UC, Merced</a></div> -->
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="http://vllab.ucmerced.edu/hylee/" target="blank">Hsin-Ying Lee</a><sup>3</sup></div>
+          <!-- <div class="school"><a href="https://snap.com/" target="blank">Snap Inc.</a></div> -->
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="http://www.stulyakov.com/" target="blank">Sergey Tulyakov</a><sup>3</sup></div>
+          <!-- <div class="school"><a href="https://snap.com/" target="blank">Snap Inc.</a></div> -->
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="https://alanspike.github.io/" target="blank">Jian Ren</a><sup>3</sup></div>
+          <!-- <div class="school"><a href="https://snap.com/" target="blank">Snap Inc.</a></div> -->
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a><sup>2, 4</sup></div>
+          <!-- <div class="school"><a href="http://www.ucmerced.edu/" target="blank">UC, Merced</a></div> -->
+        </h5>
+      </div>
+
+      <!-- <div class="row center" style="margin-top:-100px"> -->
+        <div class="row center">
+        <!-- <h5 class="col m_tmp s12"></h5> -->
+        <h5 class="header col m3 s12">
+          <div class="school"><a href="http://www.ucmerced.edu/" target="blank"><sup>1</sup>Carnegie Mellon University</a></div>
+        </h5>
+        <h5 class="header col m3 s12">
+          <div class="school"><a href="https://www.pku.edu.cn/" target="blank"><sup>2</sup>UC, Merced</a></div>
+        </h5>
+        <h5 class="header col m3 s12">
+          <div class="school"><a href="http://www.vt.edu/" target="blank"><sup>3</sup>Snap Inc.</a></div>
+        </h5>
+        <h5 class="header col m3 s12">
+          <div class="school"><a href="http://www.verisk.com/" target="blank"><sup>4</sup>Google Research</a></div>
+        </h5>
+      </div>
+
+    </div>
+  </div>
+
+        <div class="publ center">
+          <ul>
+            <li><a href="pdf/InOut_arXiv.pdf">Paper</a></li>
+            <li><a href="https://github.com/yccyenchicheng/InOut">Code</a></li>
+          </ul>
+        </div>
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <!--div class="col l8 offset-l2 m10 offset-m1 s12"-->
+        <div class="col-sm-12">
+          <img class="responsive-img" src="images/panorama/55_ffmpeg.gif" hspace="10">
+          <img class="responsive-img" src="images/panorama/111_ffmpeg.gif" hspace="10">
+          <img class="responsive-img" src="images/panorama/139_ffmpeg.gif" hspace="10">
+          <img class="responsive-img" src="images/panorama/181_ffmpeg.gif" hspace="10">
+          <!-- <img class="responsive-img" src="images/emma_adult.gif" hspace="10"> -->
+        </div>
+      </div>
+      <div class="row center">
+        <!--div class="col l8 offset-l2 m10 offset-m1 s12"-->
+        <div class="col-sm-10">
+          <img class="responsive-img" src="images/teaser_v8.png">
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <section id="abstract" class="abstract-section">
+    <div class="row section scrollspy">
+      <div class="title">Abstract</div>
+      Image outpainting seeks for a semantically consistent extension of the input image beyond its available content. Compared to inpainting --- filling in missing pixels in a way coherent with the neighboring pixels --- outpainting can be achieved in more diverse ways since the problem is less constrained by the surrounding pixels. 
+      Existing image outpainting methods pose the problem as a conditional image-to-image translation task, often generating repetitive structures and textures by replicating the content available in the input image.
+      In this work, we formulate the problem from the perspective of inverting  generative adversarial networks.
+      Our generator renders micro-patches conditioned on their joint latent code as well as their individual positions in the image. 
+      To outpaint an image, we seek for multiple latent codes not only recovering available patches but also synthesizing diverse outpainting by patch-based generation.
+      This leads to richer structure and content in the outpainted regions. 
+      Furthermore, our formulation allows for outpainting conditioned on the categorical input, thereby enabling flexible user controls. 
+      Extensive experimental results demonstrate the proposed method performs favorably against existing in- and outpainting methods, featuring higher visual quality and diversity.
+
+    </div>
+    </section>
+    <br>
+
+    <section id="paper" class="paper-section">
+    <div class="row section scrollspy">
+      <div class="title">Paper</div>
+      <br>
+      <div class="col s8 offset-s2">
+        <div id='paper-thumbnail'>
+          <!-- <a href="../publication/ECCV18_DRIT.pdf" target="_blank"> -->
+          <a href="pdf/InOut_arXiv.pdf" target="_blank">
+            <img class="responsive-img" src="images/InOut_thumbnail.png">
+            <!-- <img class="responsive-img" src="images/paper_thumbnail.png"> -->
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="subtitle">Citation</div>
+      <p>Yen-Chi Cheng, Chieh Hubert Lin, Hsin-Ying Lee, Sergey Tulyakov, Jian Ren, Ming-Hsuan Yang "Diverse Image Outpainting via GAN Inversion", in arXiv, 2021.</p>
+      <br>
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@article{InOut,
+    author    = {Cheng, Yen-Chi and Lin, Chieh Hubert and Lee, Hsin-Ying and Tulyakov, Sergey and Ren, Jian and Yang, Ming-Hsuan}, 
+    title     = {Diverse Image Outpainting via GAN Inversion},
+    volume    = {abs/1905.01270},
+    year      = {2021}
+}</pre>
+
+    </div>
+    </section>
+
+    <section id="models" class="model-section">
+      <div class="title">Models</div>
+        <div class="col s6 offset-s3">
+          <!-- <img class="responsive-img" src="images/architecture.png"> -->
+          <img class="responsive-img" src="images/arch_v8.png">
+        </div>
+    </section>
+
+    <section id="results" class="result-section">
+    <div class="section row scrollspy">
+      <div class="title">Results</div>
+
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Celeb to Portrait</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns" onclick="hover(this, 'Portrait')" id="DRIT" name="Portrait_DRIT" >DRIT</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'Portrait')" id="MUNIT" name="Portrait_MUNIT">MUNIT</td-->
+                <td class="method-tag four-columns" onclick="hover(this, 'Portrait')" id="CycleGAN" name="Portrait_CycleGAN">CycleGAN+noise</td>
+                <td class="method-tag four-columns" onclick="hover(this, 'Portrait')" id="CycleBicycle" name="Portrait_CycleBicycle">CycleGAN+BicycleGAN</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/1.png" name="Portrait_1_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/1/1.png" name="Portrait_1_1">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/1/2.png" name="Portrait_1_2">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/1/3.png" name="Portrait_1_3">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/1/4.png" name="Portrait_1_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/2.png" name="Portrait_2_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/2/1.png" name="Portrait_2_1">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/2/2.png" name="Portrait_2_2">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/2/3.png" name="Portrait_2_3">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/2/4.png" name="Portrait_2_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/3.png" name="Portrait_3_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/3/1.png" name="Portrait_3_1">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/3/2.png" name="Portrait_3_2">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/3/3.png" name="Portrait_3_3">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/3/4.png" name="Portrait_3_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/4.png" name="Portrait_4_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/4/1.png" name="Portrait_4_1">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/4/2.png" name="Portrait_4_2">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/4/3.png" name="Portrait_4_3">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/4/4.png" name="Portrait_4_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/5.png" name="Portrait_5_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/5/1.png" name="Portrait_5_1">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/5/2.png" name="Portrait_5_2">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/5/3.png" name="Portrait_5_3">
+          <img class="responsive-img five-columns" src="images/Demo/Portrait/DRIT/5/4.png" name="Portrait_5_4">
+        </div>
+      </div>
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Yosemite Winter to Summer</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns" onclick="hover(this, 'Yosemite')" id="DRIT" name="Yosemite_DRIT">DRIT</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'Yosemite')" id="MUNIT" name="Yosemite_MUNIT">MUNIT</td-->
+                <td class="method-tag four-columns" onclick="hover(this, 'Yosemite')" id="CycleGAN" name="Yosemite_CycleGAN">CycleGAN+noise</td>
+                <td class="method-tag four-columns" onclick="hover(this, 'Yosemite')" id="CycleBicycle" name="Yosemite_CycleBicycle">CycleGAN+BicycleGAN</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/1.png" name="Yosemite_1_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/1/1.png" name="Yosemite_1_1">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/1/2.png" name="Yosemite_1_2">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/1/3.png" name="Yosemite_1_3">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/1/4.png" name="Yosemite_1_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/2.png" name="Yosemite_2_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/2/1.png" name="Yosemite_2_1">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/2/2.png" name="Yosemite_2_2">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/2/3.png" name="Yosemite_2_3">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/2/4.png" name="Yosemite_2_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/3.png" name="Yosemite_3_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/3/1.png" name="Yosemite_3_1">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/3/2.png" name="Yosemite_3_2">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/3/3.png" name="Yosemite_3_3">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/3/4.png" name="Yosemite_3_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/4.png" name="Yosemite_4_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/4/1.png" name="Yosemite_4_1">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/4/2.png" name="Yosemite_4_2">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/4/3.png" name="Yosemite_4_3">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/4/4.png" name="Yosemite_4_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/5.png" name="Yosemite_5_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/5/1.png" name="Yosemite_5_1">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/5/2.png" name="Yosemite_5_2">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/5/3.png" name="Yosemite_5_3">
+          <img class="responsive-img five-columns" src="images/Demo/Yosemite/DRIT/5/4.png" name="Yosemite_5_4">
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Photo to Monet</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns" onclick="hover(this, 'p2m')" id="DRIT" name="p2m_DRIT">DRIT</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'p2v')" id="MUNIT" name="p2v_MUNIT">MUNIT</td-->
+                <td class="method-tag four-columns" onclick="hover(this, 'p2m')" id="CycleGAN" name="p2m_CycleGAN">CycleGAN+noise</td>
+                <td class="method-tag four-columns" onclick="hover(this, 'p2m')" id="CycleBicycle" name="p2m_CycleBicycle">CycleGAN+BicycleGAN</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/1.png" name="p2m_1_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/1/1.png" name="p2m_1_1">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/1/2.png" name="p2m_1_2">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/1/3.png" name="p2m_1_3">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/1/4.png" name="p2m_1_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/2.png" name="p2m_2_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/2/1.png" name="p2m_2_1">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/2/2.png" name="p2m_2_2">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/2/3.png" name="p2m_2_3">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/2/4.png" name="p2m_2_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/3.png" name="p2m_3_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/3/1.png" name="p2m_3_1">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/3/2.png" name="p2m_3_2">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/3/3.png" name="p2m_3_3">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/3/4.png" name="p2m_3_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/4.png" name="p2m_4_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/4/1.png" name="p2m_4_1">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/4/2.png" name="p2m_4_2">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/4/3.png" name="p2m_4_3">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/4/4.png" name="p2m_4_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/1.png" name="p2m_5_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/5/1.png" name="p2m_5_1">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/5/2.png" name="p2m_5_2">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/5/3.png" name="p2m_5_3">
+          <img class="responsive-img five-columns" src="images/Demo/p2m/DRIT/5/4.png" name="p2m_5_4">
+        </div>
+
+    </div>
+
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Cat to Dog</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns"  id="DRIT" name="v2m_DRIT" >DRIT</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'v2m')" id="MUNIT" name="v2m_MUNIT">MUNIT</td-->
+                <!--td class="method-tag four-columns" onclick="hover(this, 'v2m')" id="CycleGAN" name="v2m_CycleGAN">CycleGAN+noise</td-->
+                <!--td class="method-tag four-columns" onclick="hover(this, 'v2m')" id="CycleBicycle" name="v2m_CycleBicycle">CycleGAN+BicycleGAN</td-->
+            </tr>
+            </tbody>
+        </table>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/1.png" name="c2d_1_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/1/1.png" name="c2d_1_1">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/1/2.png" name="c2d_1_2">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/1/3.png" name="c2d_1_3">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/1/4.png" name="c2d_1_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/2.png" name="c2d_2_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/2/1.png" name="c2d_2_1">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/2/2.png" name="c2d_2_2">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/2/3.png" name="c2d_2_3">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/2/4.png" name="c2d_2_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/3.png" name="c2d_3_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/3/1.png" name="c2d_3_1">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/3/2.png" name="c2d_3_2">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/3/3.png" name="c2d_3_3">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/3/4.png" name="c2d_3_4">
+        </div>
+        <div class="col s12">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/4.png" name="c2d_4_src" hspace="20">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/4/1.png" name="c2d_4_1">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/4/2.png" name="c2d_4_2">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/4/3.png" name="c2d_4_3">
+          <img class="responsive-img five-columns" src="images/Demo/c2d/DRIT/4/4.png" name="c2d_4_4">
+        </div>
+    </div>
+
+    </section>
+
+
+   <section id="reference" class="reference-section">
+    <div class="row section scrollspy">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          Jun-Yan Zhu*, Taesung Park*, Phillip Isola, Alexei A. Efros <a href="https://arxiv.org/pdf/1703.10593.pdf" target="blank">"Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"</a>. ICCV, 2017.
+        </li>
+        <li>&bull;
+          Jun-Yan Zhu, Richard Zhang, Deepak Pathak, Trevor Darrell, Alexei A. Efros, Oliver Wang, Eli Shechtman <a href="https://arxiv.org/abs/1711.11586.pdf" target="blank">"Toward Multimodal Image-to-Image Translation "</a>NIPS, 2017.
+        </li>
+        <li>&bull;
+         Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz <a href="https://arxiv.org/abs/1804.04732.pdf" target="blank">"MUNIT: Multimodal UNsupervised Image-to-image Translation </a>ECCV, 2018.
+        </li>
+      </ul>
+    </div>
+    </section>
+
+
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+    
+    
+    <div class="footer-copyright center black-text">
+      Copyright © Yen-Chi Cheng 2021
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/init.js"></script>  
+  <script src="js/materialize.js"></script>
+
+
+
+  </body>
+</html>
+
+
