@@ -1,7 +1,5 @@
 <!-- ![Python 3.5](https://img.shields.io/badge/python-3.5-green.svg) -->
 
-<img src='images/panorama/111_ffmpeg.gif' width=100%>
-
 # Diverse Image Outpainting via GAN Inversion
 [[Project Page]](https://yccyenchicheng.github.io/InOut/)[[Paper]]()
 
@@ -9,12 +7,22 @@
 
 Contact: Yen-Chi Cheng, Chieh Hubert  Lin, Hsin-Ying Lee
 
-## Paper
+<img src='images/vstack.gif' width=80%>
 
-## Example Results
-<!-- <img src='imgs/teaser.png' width="1000px"/> -->
+## Paper
 
 ## Usage
 Coming soon.
+
+## Example Results
+### Flickr-Landscape
+<img src='images/Flickr.png' width="1000px"/>
+
+### LSUN-Church
+<img src='images/Church.png' width="1000px"/>
+
+### Panorama
+<img src='images/pano.png' width="1000px"/>
+
 
 ## Acknowledgment
