@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>InOut</title>
+  <title>In&Out</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -35,7 +35,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container scrollspy" id="home">
 
-      <h4 class="header center black-text">Diverse Image Outpainting via GAN Inversion</h4>
+      <h4 class="header center black-text">In&Out: Diverse Image Outpainting via GAN Inversion</h4>
       <!-- <h4 class="header center black-text">Disentangled Representation</h4> -->
 
       <br>
@@ -58,13 +58,14 @@
           <!-- <div class="school"><a href="https://snap.com/" target="blank">Snap Inc.</a></div> -->
         </h5>
 
+
         <h5 class="header col m2 s12">
-          <div class="author"><a href="http://www.stulyakov.com/" target="blank">Sergey Tulyakov</a><sup>3</sup></div>
+          <div class="author"><a href="https://alanspike.github.io/" target="blank">Jian Ren</a><sup>3</sup></div>
           <!-- <div class="school"><a href="https://snap.com/" target="blank">Snap Inc.</a></div> -->
         </h5>
 
         <h5 class="header col m2 s12">
-          <div class="author"><a href="https://alanspike.github.io/" target="blank">Jian Ren</a><sup>3</sup></div>
+          <div class="author"><a href="http://www.stulyakov.com/" target="blank">Sergey Tulyakov</a><sup>3</sup></div>
           <!-- <div class="school"><a href="https://snap.com/" target="blank">Snap Inc.</a></div> -->
         </h5>
 
@@ -150,13 +151,13 @@
 
     <div class="row">
       <div class="subtitle">Citation</div>
-      <p>Yen-Chi Cheng, Chieh Hubert Lin, Hsin-Ying Lee, Sergey Tulyakov, Jian Ren, Ming-Hsuan Yang, "Diverse Image Outpainting via GAN Inversion", in arXiv, 2021.</p>
+      <p>Yen-Chi Cheng, Chieh Hubert Lin, Hsin-Ying Lee, Jian Ren, Sergey Tulyakov, Ming-Hsuan Yang, "In&Out: Diverse Image Outpainting via GAN Inversion", in arXiv, 2021.</p>
       <br>
       <div class="subtitle">Bibtex</div>
       <pre>
 @article{InOut,
-    author    = {Cheng, Yen-Chi and Lin, Chieh Hubert and Lee, Hsin-Ying and Tulyakov, Sergey and Ren, Jian and Yang, Ming-Hsuan}, 
-    title     = {Diverse Image Outpainting via GAN Inversion},
+    author    = {Cheng, Yen-Chi and Lin, Chieh Hubert and Lee, Hsin-Ying and Ren, Jian and Tulyakov, Sergey and Yang, Ming-Hsuan}, 
+    title     = {In&Out: Diverse Image Outpainting via GAN Inversion},
     volume    = {abs/},
     year      = {2021}
 }</pre>
@@ -184,23 +185,28 @@
 
       <div class="row center">
         <div class="subtitle" id="Flickr">Flickr-Landscape</div>
+        Outpainting results of the collected Flickr-Landscape dataset.
           <img class="responsive-img" src="images/Flickr.png">
       </div>
 
       <div class="row center">
         <div class="subtitle" id="LSUN">LSUN-Church</div>
+        Outpainting results of the church cateogry of the LSUN dataset.
           <img class="responsive-img" src="images/Church.png">
       </div>
       <br>
       <div class="row center">
         <div class="subtitle" id="Compare">Comparisons</div>
+          The proposed approach is more stable, synthesizes richer context with more complex structures, and is able to handle some of the difficultcomplex scenes.
+          
           <div class="col s12">
           <img class="responsive-img" src="images/compare.png">
           </div>
       </div>
       <br>
       <div class="row center">
-        <div class="subtitle" id="multi">Multi-directional and irregular boundary</div>
+        <div class="subtitle" id="multi">Multi-directional and irregular-boundary outpainting</div>
+          The proposed method can naturally handle outpainting to any direction and with irregular boundaries.
           <div class="col s8 offset-s2">
           <img class="responsive-img" src="images/multi_and_irr.png">
           </div>
@@ -208,6 +214,7 @@
       <br>
       <div class="row center">
         <div class="subtitle" id="Pano">Panorama</div>
+          The proposed method can perform panorama generation of high quality and high structural complexity without repeating patterns.
           <img class="responsive-img" src="images/pano.png">
       </div>
     </div>
