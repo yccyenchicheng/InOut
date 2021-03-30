@@ -17,8 +17,10 @@ Coming soon.
 ## Example Results
 ### Flickr-Landscape
 <img src='images/Flickr.png' width="1000px"/>
+
 ### LSUN-Church
 <img src='images/Church.png' width="1000px"/>
+
 ### Panorama
 <img src='images/pano.png' width="1000px"/>
 
