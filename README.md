@@ -1,6 +1,6 @@
 <!-- ![Python 3.5](https://img.shields.io/badge/python-3.5-green.svg) -->
 
-<img src='images/panorama/111_ffmpeg.gif' width=100%>
+<img src='images/vstack.gif' width=80%>
 
 # Diverse Image Outpainting via GAN Inversion
 [[Project Page]](https://yccyenchicheng.github.io/InOut/)[[Paper]]()
