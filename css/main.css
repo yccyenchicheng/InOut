@@ -280,21 +280,25 @@ html {
 }
 
 .teaser-arrow {
-  width: 37%; 
+  width: 10%; /* 37% * 40%  */
   font-size: 42px; 
   display: inline-block;
-  vertical-align: top;
   line-height: 0.6em;
 }
 
 .teaser-center {
+  position: relative;
+  top: -0.3em;
   width: 24%; 
   font-size: 20px;
   display: inline-block;
+  text-align: center;
 }
 
-.arrow-text{
-  font-size: 20px;
+.teaser-arrow-text{
   position: relative;
   top: -0.3em;
+  width: 22%; /* 37% * 60%  */
+  font-size: 20px;
+  display: inline-block;
 }
