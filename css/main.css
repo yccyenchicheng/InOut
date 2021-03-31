@@ -196,36 +196,58 @@ html {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes ani-scroll-out-left {
     0%  {left: 0;}
-    10%  {left: 0;}
+    20%  {left: 0;}
     50% {left: -38%;}
-    90% {left: -38%;}
+    100% {left: -38%;}
 }
 /* Standard syntax */
 @keyframes ani-scroll-out-left {
     0%  {left: 0;}
-    10%  {left: 0;}
+    20%  {left: 0;}
     50% {left: -38%;}
-    90% {left: -38%;}
+    100% {left: -38%;}
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes ani-scroll-out-right {
     0%  {right: 0;}
-    10%  {right: 0;}
+    20%  {right: 0;}
     50% {right: -38%;}
-    90% {right: -38%;}
+    100% {right: -38%;}
 }
 /* Standard syntax */
 @keyframes ani-scroll-out-right {
     0%  {right: 0;}
-    10%  {right: 0;}
+    20%  {right: 0;}
     50% {right: -38%;}
-    90% {right: -38%;}
+    100% {right: -38%;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ani-fadeout {
+    0%  {opacity: 0;}
+    5%  {opacity: 1;}
+    90% {opacity: 1;}
+    95% {opacity: 0;}
+    100% {opacity: 0;}
+}
+/* Standard syntax */
+@keyframes ani-fadeout {
+    0%  {opacity: 0;}
+    5%  {opacity: 1;}
+      90% {opacity: 1;}
+    95% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
 #scroll-out-container {
   position: relative;
   overflow: hidden;
+  
+  /* Chrome, Safari, Opera */
+  -webkit-animation: ani-fadeout 8s linear 0s infinite;
+  /* Standard syntax */
+  animation: ani-fadeout 8s linear 0s infinite;
 }
 
 #scroll-out-block-left {
@@ -234,9 +256,9 @@ html {
   /*animation: translate(0, 100%) 1s ease infinite;*/
 
   /* Chrome, Safari, Opera */
-  -webkit-animation: ani-scroll-out-left 5s linear 0s infinite;
+  -webkit-animation: ani-scroll-out-left 8s linear 0s infinite;
   /* Standard syntax */
-  animation: ani-scroll-out-left 5s linear 0s infinite;
+  animation: ani-scroll-out-left 8s linear 0s infinite;
 }
 
 #scroll-out-block-right {
@@ -244,9 +266,9 @@ html {
   right: 0;
 
   /* Chrome, Safari, Opera */
-  -webkit-animation: ani-scroll-out-right 5s linear 0s infinite;
+  -webkit-animation: ani-scroll-out-right 8s linear 0s infinite;
   /* Standard syntax */
-  animation: ani-scroll-out-right 5s linear 0s infinite;
+  animation: ani-scroll-out-right 8s linear 0s infinite;
 }
 
 .scroll-out-block {
@@ -255,4 +277,24 @@ html {
   width: 38%; /* 50% * 0.75 */
   height: 100%;
   z-index: 1;
+}
+
+.teaser-arrow {
+  width: 37%; 
+  font-size: 42px; 
+  display: inline-block;
+  vertical-align: top;
+  line-height: 0.6em;
+}
+
+.teaser-center {
+  width: 24%; 
+  font-size: 20px;
+  display: inline-block;
+}
+
+.arrow-text{
+  font-size: 20px;
+  position: relative;
+  top: -0.3em;
 }
