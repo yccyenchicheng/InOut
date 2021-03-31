@@ -190,3 +190,69 @@ html {
   margin: 20px 0px;
   background-color: #555555 !important;
 }
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ani-scroll-out-left {
+    0%  {left: 0;}
+    10%  {left: 0;}
+    50% {left: -38%;}
+    90% {left: -38%;}
+}
+/* Standard syntax */
+@keyframes ani-scroll-out-left {
+    0%  {left: 0;}
+    10%  {left: 0;}
+    50% {left: -38%;}
+    90% {left: -38%;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ani-scroll-out-right {
+    0%  {right: 0;}
+    10%  {right: 0;}
+    50% {right: -38%;}
+    90% {right: -38%;}
+}
+/* Standard syntax */
+@keyframes ani-scroll-out-right {
+    0%  {right: 0;}
+    10%  {right: 0;}
+    50% {right: -38%;}
+    90% {right: -38%;}
+}
+
+#scroll-out-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#scroll-out-block-left {
+  top: 0;
+  left: 0;
+  /*animation: translate(0, 100%) 1s ease infinite;*/
+
+  /* Chrome, Safari, Opera */
+  -webkit-animation: ani-scroll-out-left 5s linear 0s infinite;
+  /* Standard syntax */
+  animation: ani-scroll-out-left 5s linear 0s infinite;
+}
+
+#scroll-out-block-right {
+  top: 0;
+  right: 0;
+
+  /* Chrome, Safari, Opera */
+  -webkit-animation: ani-scroll-out-right 5s linear 0s infinite;
+  /* Standard syntax */
+  animation: ani-scroll-out-right 5s linear 0s infinite;
+}
+
+.scroll-out-block {
+  position: absolute;
+  background-color: white;
+  width: 38%; /* 50% * 0.75 */
+  height: 100%;
+  z-index: 1;
+}
