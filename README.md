@@ -5,6 +5,8 @@
 
 <!-- Pytorch implementation for our diverse image outpainting method. With the proposed approach, we are able to produce diverse image outpainting results with high visual quality. -->
 
+Code, data, and trained models will be released soon.
+
 Contact: Yen-Chi Cheng, Chieh Hubert  Lin, Hsin-Ying Lee
 
 <img src='images/vstack.gif' width=80%>
